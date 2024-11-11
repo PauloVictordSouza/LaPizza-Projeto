@@ -12,9 +12,9 @@ body {
     background-image: url(images/229297618_11039274.png);
 }
 
-/* Header */
+
 .header {
-    background: url(images/WE\ LOVE_20241109_222152_0000.png),linear-gradient(to bottom, #f7cb73, #fff4cd); /* Degradê do topo até a cor de fundo da seção 2 */
+    background: url(images/WE\ LOVE_20241109_222152_0000.png),linear-gradient(to bottom, #f7cb73, #fff4cd);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -27,8 +27,7 @@ body {
     color: white;
 }
 
-/* Mais Vendidas */
-/* Mais Vendidas */
+
 .mais-vendidas {
     background: linear-gradient(to top, #FFE39A, #FFF5CD 50%, #FFE39A), 
                 linear-gradient(to bottom, #FFE39A, #FFF5CD 50%, #FFE39A); 
@@ -112,7 +111,7 @@ body {
     cursor: pointer;
 }
 
-/* Sobre */
+
 .sobre {
     background: url(images/1000141585-removebg.png) ,linear-gradient(to top, #FFE39A, #FFF5CD 60%, #FFE39A);
     background-size: cover;
@@ -165,46 +164,44 @@ body {
     cursor: pointer;
 }
 
-/* Responsividade */
-/* Responsividade */
+
 @media (max-width: 768px) {
-    /* Header */
+    
     .header {
         padding: 60px 20px;
-        min-height: 80vh;  /* Reduz a altura para ajustar melhor na tela */
-        text-align: center; /* Centraliza o conteúdo */
+        min-height: 80vh;  
+        text-align: center; 
     }
 
-    /* Mais Vendidas */
+    
     .mais-vendidas {
         background-position: center;
         background-attachment: fixed;
         background: linear-gradient(to top, #FFE39A, #FFF5CD 50%, #FFE39A), 
             linear-gradient(to bottom, #FFE39A, #FFF5CD 50%, #FFE39A);
-  /* Degradê + imagem */
         padding: 20px;
     }
 
     .mais-vendidas h2 {
-        font-size: 2rem;  /* Reduz o tamanho do título para mobile */
+        font-size: 2rem;  
         margin-bottom: 10px;
     }
 
     .cards {
         flex-direction: column;
         align-items: center;
-        gap: 10px; /* Diminui o espaçamento entre as cartas */
+        gap: 10px;
     }
 
     .card {
-        max-width: 90%; /* Permite que as cartas ocupem mais espaço na tela */
+        max-width: 90%;
         width: 100%;
         margin: 0 auto;
     }
 
     .card img {
-        width: 60%;  /* Reduz o tamanho da imagem nas cartas para melhor exibição no mobile */
-        margin-bottom: 15px;  /* Espaço entre a imagem e o texto */
+        width: 60%;  
+        margin-bottom: 15px; 
     }
 
     .card h3 {
@@ -228,14 +225,14 @@ body {
     }
 
     .sobre img {
-        width: 80%;  /* Reduz o tamanho da imagem no mobile */
+        width: 80%;  
         max-width: 400px;
         margin: 20px 0;
         border-radius: 10px;
     }
 
     .sobre-texto {
-        margin-bottom: 3rem;  /* Ajustando a margem superior do texto para subir mais */
+        margin-bottom: 3rem;  
         max-width: 100%;
     }
 
