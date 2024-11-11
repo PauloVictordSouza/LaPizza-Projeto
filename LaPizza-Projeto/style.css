@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    color: #333;
+    background-image: url(images/229297618_11039274.png);
+}
+
+/* Header */
+.header {
+    background: url(images/WE\ LOVE_20241109_222152_0000.png),linear-gradient(to bottom, #f7cb73, #fff4cd); /* Degradê do topo até a cor de fundo da seção 2 */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    color: white;
+}
+
+/* Mais Vendidas */
+/* Mais Vendidas */
+.mais-vendidas {
+    background: linear-gradient(to top, #FFE39A, #FFF5CD 50%, #FFE39A), 
+                linear-gradient(to bottom, #FFE39A, #FFF5CD 50%, #FFE39A); 
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    width: 100%;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.mais-vendidas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #0d0d0d;
+    font-family: 'Sour Gummy';
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    flex: 1;
+    max-width: 250px;
+    border: 2px solid #0d0d0d;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #424242;
+}
+
+.card p {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 10px 0;
+}
+
+.card span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FF9800;
+}
+
+.card button {
+    margin-top: 10px;
+    padding: 10px;
+    background: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sobre */
+.sobre {
+    background: url(images/1000141585-removebg.png) ,linear-gradient(to top, #FFE39A, #FFF5CD 60%, #FFE39A);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 20px;
+    color: #333;
+    
+}
+
+.sobre img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-left: 6rem;
+}
+
+.sobre-texto {
+    max-width: 500px;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+.sobre-texto h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Sour Gummy';
+}
+
+.sobre-texto p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.sobre-texto .highlight {
+    color: #FF9800;
+}
+
+.sobre-texto button {
+    padding: 10px 20px;
+    background: #FF9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsividade */
+/* Responsividade */
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        padding: 60px 20px;
+        min-height: 80vh;  /* Reduz a altura para ajustar melhor na tela */
+        text-align: center; /* Centraliza o conteúdo */
+    }
+
+    /* Mais Vendidas */
+    .mais-vendidas {
+        background-position: center;
+        background-attachment: fixed;
+        background: linear-gradient(to top, #FFE39A, #FFF5CD 50%, #FFE39A), 
+            linear-gradient(to bottom, #FFE39A, #FFF5CD 50%, #FFE39A);
+  /* Degradê + imagem */
+        padding: 20px;
+    }
+
+    .mais-vendidas h2 {
+        font-size: 2rem;  /* Reduz o tamanho do título para mobile */
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Diminui o espaçamento entre as cartas */
+    }
+
+    .card {
+        max-width: 90%; /* Permite que as cartas ocupem mais espaço na tela */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .card img {
+        width: 60%;  /* Reduz o tamanho da imagem nas cartas para melhor exibição no mobile */
+        margin-bottom: 15px;  /* Espaço entre a imagem e o texto */
+    }
+
+    .card h3 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.8rem;
+    }
+
+    .card span {
+        font-size: 1rem;
+    }
+
+    .sobre {
+        
+        text-align: center;
+        padding: 30px 20px;
+        background-size: cover;
+        
+    }
+
+    .sobre img {
+        width: 80%;  /* Reduz o tamanho da imagem no mobile */
+        max-width: 400px;
+        margin: 20px 0;
+        border-radius: 10px;
+    }
+
+    .sobre-texto {
+        margin-bottom: 3rem;  /* Ajustando a margem superior do texto para subir mais */
+        max-width: 100%;
+    }
+
+    .sobre-texto h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre-texto p {
+        font-size: 0.9rem;
+    }
+
+    .sobre-texto button {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+
